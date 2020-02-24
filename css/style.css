@@ -115,6 +115,8 @@ body {
 
 .show-less-svg {
     transform: rotate(270deg);
+    height: 2rem !important;
+    width: 2rem !important;
 }
 .show-more-svg {
     transform: rotate(90deg);
@@ -219,9 +221,7 @@ body {
 
 .mail-icon {
     fill: #005f96;
-    margin-right: 1rem;
-    height: 4rem;
-    width: 4rem;
+    margin-right: 1.5rem;
 }
 
 .heading-2 {
@@ -258,10 +258,14 @@ body {
     transition: all 0.2s;
     border-radius: 0;
 }
+.header---img {
+    width: 20rem;
+}
 
 .btn:hover,
 .btn:active {
     background-color: #c56b14;
+    transform: scale(0.95);
 }
 
 .header {
@@ -279,6 +283,7 @@ body {
     height: 6.2rem;
     background-color: #fff;
     width: 100%;
+    box-shadow: 0 4px 20px #333;
 }
 
 .header__logo {
@@ -340,6 +345,7 @@ body {
     display: flex;
     height: 100%;
     background: url(../assets/group.png);
+    background-position: 40% 0;
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -384,6 +390,7 @@ body {
     color: #005f96;
     margin-top: 1.3rem;
     font-family: 'futura-light';
+    width: 60%;
 }
 
 .header__background {
@@ -435,20 +442,19 @@ body {
     z-index: 100;
 }
 .benefits__item-content-heading {
-    margin-top: 2.4rem;
-    font-size: 1.8rem;
+    margin-top: 3.8rem;
+    font-size: 2.5rem;
     font-weight: normal;
     color: #fff;
     text-transform: capitalize;
     font-family: 'futura-medium';
 }
 .benefits__item-content-description {
-    margin-top: 1rem;
+    margin-top: 2.5rem;
     padding: 0 3rem;
     font-size: 1.8rem;
     color: #fff;
     font-weight: normal;
-    text-transform: capitalize;
     font-family: 'futura-light';
     line-height: 1.17;
     letter-spacing: 0;
@@ -479,8 +485,17 @@ body {
     color: #005f96;
     margin-bottom: 3.7rem;
     font-family: 'futura-light';
-    width: 105%;
+    width: 90%;
     line-height: 1.33;
+}
+
+.h4,
+.h5,
+.h6,
+h4,
+h5,
+h6 {
+    margin: 0;
 }
 
 .services__items {
@@ -512,8 +527,9 @@ body {
 
 .services__content-container svg {
     fill: #005f96;
-    height: 1.4rem;
-    width: 1.2rem;
+    height: 1rem;
+    width: 1rem;
+    margin-left: -1rem;
 }
 
 .services__item-heading {
@@ -521,7 +537,7 @@ body {
     font-weight: 500;
     color: #005f96;
     font-family: 'futura-medium';
-    margin-left: 0.4rem;
+    margin-left: 1.5rem;
     margin-bottom: 0;
 }
 
@@ -531,7 +547,7 @@ body {
     color: #005f96;
     line-height: 1.33;
     font-family: 'futura-light';
-    width: 105%;
+    width: 100%;
 }
 
 .services__images {
@@ -635,7 +651,7 @@ body {
 }
 
 .dot-active {
-    background-color: #fff;
+    background-color: #005f96;
     position: relative;
 }
 .dot-active::after {
@@ -648,7 +664,7 @@ body {
     width: 1.2rem;
     border-radius: 50%;
     display: block;
-    border: 1px solid #fff;
+    border: 1px solid #005f96;
 }
 .map {
 }
@@ -729,16 +745,20 @@ section:focus {
 }
 
 .about__tile-content {
-    font-size: 1.8rem;
+    font-size: 2rem;
     margin-top: 4rem;
-    margin-left: 2.4rem;
-    margin-right: 2.4rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
     margin-bottom: 2rem;
     font-family: 'futura-light';
 }
 
 .about__tile-content--primary {
-    padding-bottom: 2rem;
+    padding-bottom: 1rem;
+}
+
+.footer__img {
+    width: 20rem;
 }
 
 .tile-1,
@@ -817,8 +837,8 @@ section:focus {
     margin-bottom: 10rem;
 }
 .big-text {
-    font-size: 3rem;
-    font-family: 'futura-bold';
+    font-size: 3.9rem;
+    font-family: 'futura-medium';
     margin-left: 1rem;
 }
 
@@ -839,7 +859,6 @@ section:focus {
 }
 .brand__image-one,
 .brand__image-three {
-    height: 6rem;
     width: 9rem;
 }
 
@@ -1020,6 +1039,23 @@ section:focus {
     flex-grow: 1;
 }
 
+#xing-icon{
+    width: 40px;
+    height: 35px;
+}
+#insta-icon{
+    width: 35px;
+    height: 35px;
+}
+#facebook-icon{
+    height: 35px;
+    width: 30px;
+}
+#twitter-icon{
+    width: 35px;
+    height: 30px;
+}
+
 .footer__content {
     display: flex;
     flex-direction: column;
@@ -1045,11 +1081,12 @@ section:focus {
     margin-right: 12rem;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .footer__social-links a:not(:last-child) {
     display: inline-block;
-    margin-right: 5rem;
+    margin-right: 6.5rem;
 }
 
 .footer__social-icon {
@@ -1075,6 +1112,18 @@ section:focus {
     transition: all 0.2s;
 }
 
+.about--secondary{
+    text-align: center;
+    font-size: 2.3rem;
+    font-family: 'futura-light';
+    color: #005f96;
+    margin-bottom: 6rem;
+}
+
+#about-primary{
+    padding: 8rem 2rem 5rem 2rem !important;
+}
+
 .footer__links ul li a:hover {
     color: #005f96;
 }
@@ -1084,10 +1133,23 @@ section:focus {
     align-items: center;
 }
 
+.footer__link-icon-hover:hover {
+    fill: #005f96;
+}
+
+.footer__links ul li:hover .footer__link-icon {
+    fill: #005f96;
+}
+
+.list__link-icon {
+    height: 1rem;
+    width: 1rem;
+}
+
 .footer__link-icon {
     fill: #fff;
-    height: 1.5rem;
-    width: 1.5rem;
+    height: 1rem;
+    width: 1rem;
     margin-right: 1rem;
 }
 .hover-text:hover {
@@ -1126,21 +1188,21 @@ section:focus {
 .portal__description {
     background-color: #37afb9;
     width: 50%;
-    padding: 7rem 15rem 7rem 10rem;
+    padding: 7rem 18rem 7rem 10rem;
     box-sizing: border-box;
 }
 .portal__benefits {
     padding-top: 1rem;
     background-color: #a5d2d2;
     width: 50%;
-    padding: 7rem 18rem 22rem 7rem;
+    padding: 7rem 10rem 22rem 7rem;
     box-sizing: border-box;
 }
 .portal__benefits ul {
     list-style-type: none;
 }
 .portal__description-heading {
-    font-family: 'futura-bold';
+    font-family: 'futura-bold'; 
     text-align: left;
 }
 .portal__paragraph {
@@ -1186,7 +1248,8 @@ section:focus {
 .portal__img {
     position: absolute;
     left: 35%;
-    top: 65%;
+    top: 60%;
+    width: 50rem;
 }
 
 .heading-less-padding {
@@ -1236,7 +1299,7 @@ section:focus {
 }
 
 .stefan-gutwirth {
-    padding-top: 0.8rem;
+    padding-top: 1rem;
     padding-left: 3rem;
 }
 
@@ -1244,6 +1307,11 @@ section:focus {
     display: inline-block;
     padding-top: 1rem;
     padding-left: 3rem;
+    width: 19rem;
+}
+
+.stefan-gutwirth img {
+    width: 19rem;
 }
 
 .founders__contact-info {
@@ -1255,7 +1323,7 @@ section:focus {
 
 .founder-email {
     border-right: 1px solid #005f96;
-    padding-right: 1rem;
+    padding-right: 1.5rem;
 }
 
 .email,
@@ -1263,6 +1331,7 @@ section:focus {
     font-family: 'futura-medium';
     font-size: 2.4rem;
     color: #005f96;
+    margin-right: 0.7rem;
 }
 
 .dots-founders {
@@ -1287,8 +1356,12 @@ section:focus {
     color: #ed7102;
 }
 
+.footer {
+    box-shadow: 0 5px 30px #000;
+}
+
 .founder-tel {
-    padding-left: 1rem;
+    padding-left: 1.5rem;
 }
 
 .founder-email .tel-div {
@@ -1305,6 +1378,10 @@ section:focus {
 /* Media Queries */
 
 @media only screen and (max-width: 1200px) {
+    .header__hero-text--secondary {
+        width: 90%;
+        font-size: 3rem;
+    }
     html {
         font-size: 56.25%;
     }
@@ -1355,7 +1432,7 @@ section:focus {
     }
     .benefits__item-content-description {
         padding: 0 2rem;
-        font-size: 1.6rem;
+        font-size: 2.5rem;
     }
     .list__item:not(:last-child) {
         margin-right: 3rem;
@@ -1392,6 +1469,7 @@ section:focus {
         font-size: 4rem;
     }
     .header__hero-text--secondary {
+        width: 80%;
         font-size: 3rem;
     }
 
@@ -1423,7 +1501,7 @@ section:focus {
     }
     .services__heading {
         width: 100%;
-        font-size: 2rem;
+        font-size: 3rem;
     }
     .benefits__item:nth-of-type(3),
     .benefits__item:nth-of-type(4) {
@@ -1446,9 +1524,43 @@ section:focus {
 }
 
 @media only screen and (max-width: 800px) {
+    .carousel__content--primary {
+        padding: 0 25rem;
+        text-align: center;
+        font-size: 2.5rem;
+        line-height: normal;
+        font-family: 'futura-medium';
+        margin-bottom: 2rem;
+        letter-spacing: normal;
+        color: #fff;
+        font-weight: normal;
+    }
+
+    .footer__content p{
+        margin-bottom: 6rem;
+        line-height: 2;
+    }
+
+    .show-more-description-2{
+        display: none;
+    }
+
+    .benefits__img.Anfahrtszeiten_Icon {
+        height: 15rem;
+        width: 15rem;
+        z-index: 100;
+    }
+    .portal__points-item {
+        display: flex;
+        fill: #005f96;
+        color: #005f96;
+        font-size: 2.5rem;
+        font-family: 'futura-light';
+    }
+
     .dots-founders {
         margin-top: 0;
-        padding-bottom: 5rem;
+        padding-bottom: 9rem;
         display: flex;
     }
 
@@ -1466,16 +1578,33 @@ section:focus {
     .stefan-gutwirth img {
         order: 2;
         margin-left: 3rem;
+
+        height: auto;
+
+        width: 27rem;
+        justify-content: end;
+        align-items: flex-end;
+        flex
     }
     .stefan-gutwirth {
         width: 100%;
     }
+
+    .info-name {
+        font-size: 2.5rem;
+    }
+    .info-post {
+        font-size: 2.5rem;
+    }
+
     .info {
         margin: 0;
         width: 50%;
         align-self: end;
         text-align: end;
-        margin-right: -8rem;
+        margin-right: -9rem;
+        margin-bottom: 10rem;
+        padding-bottom: 10rem;
     }
 
     .founders__contact-info {
@@ -1533,7 +1662,7 @@ section:focus {
 
     .portal__benefits {
         width: 100%;
-        padding: 7rem 2rem 7rem 2rem;
+        padding: 4rem 2rem 7rem 2rem;
     }
 
     .portal {
@@ -1573,8 +1702,17 @@ section:focus {
         font-size: 2.5rem;
     }
 
+    .header__hero-text--secondary{
+        margin-top: 3rem;
+    }
+
+    .header__hero-text--primary{
+        width: 90%;
+    }
+
     .header {
-        height: 100vh;
+        height:90vh;
+        max-height: 100vh;
     }
     .form-group {
         flex-direction: column;
@@ -1586,8 +1724,19 @@ section:focus {
         padding: 0;
     }
     .show-more {
-        font-size: 2rem;
-        display: block;
+        font-size: 2.5rem;
+        display: flex;
+        align-items: center;
+    }
+    .reval {
+        display: flex;
+        justify-content: start;
+    }
+    .reval svg {
+        margin-left: 0.8rem;
+    }
+    .show-more svg {
+        margin-left: 0.5rem;
     }
     .show__more {
         font-size: 2rem;
@@ -1606,7 +1755,16 @@ section:focus {
     .header__hero-text {
         background: none;
         width: 100%;
-        height: 0;
+        height: 50vh;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .nav-phone-icon {
+        margin-right: 2rem;
+        height: 23px;
+        width: 23px;
     }
     .header__hero-text-container {
         margin: 5rem 5rem;
@@ -1616,14 +1774,15 @@ section:focus {
         font-size: 3rem;
     }
     .header__hero-text--secondary {
-        font-size: 3rem;
+        font-size: 2.85rem;
     }
     .header__background {
         order: -1;
         background: url('../assets/group.png');
-        background-position: center;
         background-size: cover;
-        height: 50vh;
+        background-position: 80% 0;
+        background-repeat: no-repeat;
+        height: 40vh;
     }
     .header-show {
         display: block;
@@ -1631,15 +1790,15 @@ section:focus {
         top: 6.2rem;
         background-color: rgba(0, 95, 150, 0.9);
         width: 100%;
-        height: 475%;
+        height: 210%;
         font-size: 2rem;
-        padding: 2rem 0;
+        padding: 0rem 0;
         box-sizing: border-box;
     }
     .list__item:not(:last-child) {
         margin-top: 1.5rem;
-        margin-bottom: 3rem;
         margin-right: 0;
+        margin-bottom: 2.5rem;
     }
     .list__item {
         display: block;
@@ -1715,9 +1874,32 @@ section:focus {
         margin-bottom: 3rem;
     }
 
+    .about__description-heading {
+        font-size: 2.5rem;
+    }
+
+    .about__description-content {
+        font-size: 2.5rem;
+        margin-top: 1.5rem;
+    }
+
+    .tile-1,.tile-2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header__navigation{
+        height: 10rem;
+    }
+
+    .about__tile-content{
+        font-size: 2.2rem;
+    }
+
     .about__tile {
         width: 50%;
-        height: 30%;
+        height: 120px;
     }
     .about__tile:nth-of-type(1),
     .about__tile:nth-of-type(3),
@@ -1740,6 +1922,7 @@ section:focus {
 
     .about__description-content {
         width: 100%;
+        line-height: 1.33;
     }
 
     .contact__form-buttons {
@@ -1764,24 +1947,59 @@ section:focus {
         flex-direction: column;
     }
     .footer__content {
-        padding-top: 3rem;
+        padding-top: 7.5rem;
     }
+
+    .footer__img {
+        width: 62.5%;
+    }
+
+    .footer__content p {
+        font-size: 3rem;
+    }
+
     .footer__links {
         padding-top: 2rem;
         margin: 0 auto;
         padding-bottom: 2rem;
     }
+
+    .list__link-icon{
+        height: 1.5rem;
+        width: 2rem;
+    }
+
+    .footer__link-icon{
+        height: 1.5rem;
+        width: 2rem;
+    }
+
     .footer__links ul li {
         text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     .show-more-about {
         display: none;
     }
 
+    .show__more {
+        display: flex;
+        align-items: center;
+    }
+
     .show__more svg {
         fill: #005f96;
-        height: 1.4rem;
-        width: 1.2rem;
+        height: 2rem;
+        width: 2rem;
+        margin-left: 0.8rem;
+    }
+    .founder-email a:link,
+    .founder-email a:visited,
+    .founder-tel a:link,
+    .founder-tel a:visited {
+        font-size: 2.5rem;
     }
 
     .contact__form {
@@ -1838,8 +2056,11 @@ section:focus {
     .dots-grid {
         display: flex;
         margin: 0;
-        margin-bottom: 2rem;
+        margin-bottom: 8rem;
+        margin-top: 4rem;
     }
+
+    
     .dot-active {
         position: relative;
     }
@@ -1886,17 +2107,52 @@ section:focus {
         display: none;
     }
 
+    .contact__description {
+        font-size: 2.5rem;
+    }
+
+    .footer__links ul li a {
+        font-size: 3rem;
+        text-align: center;
+        align-self: center;
+        justify-self: center;
+    }
+
+    .footer__links {
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer__links ul {
+        text-align: center;
+    }
+
     .mail-icon {
-        height: 35px;
-        width: 35px;
+        height: 40px;
+        width: 40px;
     }
 
     .header---img {
-        width: 60%;
+        width: 70%;
+        display: inline-block;
+        padding: 1.5rem 0;
     }
 
     .benefits__items {
         padding-bottom: 3rem;
+    }
+
+    .carousel__content--secondary {
+        font-size: 2.5rem;
+        width: 90%;
+    }
+
+    ol,
+    ul {
+        margin-top: 4rem;
+        margin-bottom: 4rem;
     }
 
     .dot-white:not(:last-child) {
@@ -1913,7 +2169,8 @@ section:focus {
     .dots-brands {
         display: flex;
         margin-top: 0;
-        margin-bottom: 2rem;
+        padding-top: 5rem;
+        padding-bottom: 8rem;
     }
 
     .brands__images {
@@ -1952,8 +2209,8 @@ section:focus {
     .benefits__item-4 {
         display: none;
     }
-    .dot-white {
-        background-color: #fff;
+    .dot-active {
+        background-color: #005f96;
     }
 
     .footer__social-icon {
@@ -1968,8 +2225,39 @@ section:focus {
     }
 
     #myCarousel {
-        height: 40vh;
-        min-height: 40vh;
+        height: 50vh;
+        min-height: 50vh;
+    }
+
+    .show-more-svg {
+        height: 2rem !important;
+        width: 2rem !important;
+    }
+
+    .services__item-description{
+        font-size: 2.5rem;
+    }
+
+    .services__content-container svg{
+        width: 1.5rem;
+        height: 2rem;
+        align-self: flex-start;
+        margin-top: .5rem;
+    }
+
+    .services__item-heading{
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+        line-height: 1.33;
+        margin-left: 1rem
+    }
+
+    .services__description {
+        font-size: 2.5rem;
+    }
+
+    .show-more-description{
+        display: none;
     }
 }
 
@@ -1978,7 +2266,7 @@ section:focus {
         margin-left: 2rem;
     }
     .benefits__item-content-description {
-        padding: 0 15rem;
+        padding: 0 5rem;
     }
     .carousel__content--primary {
         padding: 0 8rem;
@@ -1993,6 +2281,21 @@ section:focus {
         padding: 4rem 15rem 3rem 15rem !important;
         text-align: center;
     }
+
+    .portal__paragraph:first-of-type{
+        font-size: 2.9rem;
+    }
+
+    .portal__paragraph{
+        font-size: 2.5rem;
+    }
+
+    .about--secondary{
+        text-align: left;
+        padding-left: 2rem;
+        font-size: 2.9rem;
+    }
+
     html {
         font-size: 37.5%;
     }
@@ -2012,25 +2315,25 @@ section:focus {
     }
 
     .heading-2 {
-        font-size: 2.5rem;
+        font-size: 2.8rem;
         padding: 5rem 0 5rem 2rem !important;
         text-align: left;
     }
     .founder-info {
-        margin: 0 auto 10rem auto;
+        margin: 0 auto 5rem auto;
         width: 90%;
         box-sizing: border-box;
     }
 
     .header__background {
-        height: 50%;
+        height: 40%;
     }
     .header__hero-text {
-        height: 0%;
+        height: 50%;
     }
     .btn:link,
     .btn:visited {
-        font-size: 2.5rem;
+        font-size: 2.4rem;
         padding: 2rem 5rem;
     }
 
@@ -2052,19 +2355,19 @@ section:focus {
     }
 
     .header__hero-text-container {
-        margin: 8rem 3rem 3rem 3rem;
     }
     .header__hero-text--primary {
-        font-size: 3rem;
-        line-height: 1.18;
+        font-size: 2.85rem;
+        line-height: 1.35;
     }
     .header__hero-text--secondary {
-        font-size: 3rem;
+         margin-top: 3rem;
         line-height: 1.18;
+        margin-bottom: 1rem;
     }
     .header-show {
-        height: 620%;
-        padding: 2rem 0;
+        height: 400%;
+        padding: 4rem 0 5rem 0;
     }
     .about__tiles {
         margin: 0;
@@ -2119,7 +2422,7 @@ section:focus {
 
 @media only screen and (max-width: 400px) {
     #brands-heading {
-        padding: 4rem 6rem 3rem 6rem !important;
+        padding: 6rem 6rem 5rem 6rem !important;
         text-align: center;
     }
     .checkboxes-container {
@@ -2136,7 +2439,7 @@ section:focus {
     }
 
     .carousel__content--primary {
-        padding: 0 4rem;
+        padding: 0 2rem;
     }
     .carousel__content--secondary {
         padding: 0 0rem;
@@ -2146,7 +2449,7 @@ section:focus {
     }
 
     .benefits .benefits-heading-main {
-        padding: 4rem 8rem 6rem 8rem !important;
+        padding: 6.5rem 8rem 5rem 8rem !important;
         text-align: center;
     }
 }

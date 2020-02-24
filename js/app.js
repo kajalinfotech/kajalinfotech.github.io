@@ -39,11 +39,15 @@ $(document).ready(() => {
 
     $('.show-more').click(() => {
         var list = $('.services__items');
+        var data = $('.show-more-description');
+        data.slideToggle(200);
         list.slideToggle(200);
     });
 
     $('.show__more').click(() => {
         var list = $('.show-more-about');
+        var data = $('.show-more-description-2');
+        data.slideToggle(200);
         list.slideToggle(200);
     });
 
@@ -199,7 +203,10 @@ var logoContent = [
     'Professionelle Prozesse ermöglichen Fahrzeugzulassungen, auch wenn Ihre Mitarbeiter ausfallen.'
 ];
 
-var founderImg = ['assets/stefan-gutwirth-stockimage.png', 'assets/grimminger-freigestellt-2.png'];
+var founderImg = [
+    'assets/stefan-gutwirth-stockimage@3x.png',
+    'assets/grimminger-freigestellt-2@3x.png'
+];
 var founderName = ['Stefan Grutwirth', 'Andreas Grimminger'];
 var founderPost = ['Gebietsleiter Süd', 'Key Account Manger'];
 
@@ -391,4 +398,30 @@ document.querySelector('.btn-3').addEventListener('click', () => {
     document.querySelector('.btn-2').classList.remove('btn-active');
     document.querySelector('.btn-3').classList.add('btn-active');
     document.querySelector('.form--3').style.display = 'block';
+});
+
+// Dragable Sliders
+
+var founderSlide = document.getElementById('founder-slide');
+
+founderSlide.addEventListener('touchstart', () => {
+    if (document.getElementById('dot-zero-founder').classList.contains('dot-active-white')) {
+        document.getElementById('dot-zero-founder').classList.remove('dot-active-white');
+        document.getElementById('dot-zero-founder').classList.remove('dot-active');
+        document.getElementById('dot-one-founder').classList.add('dot-active-white');
+        document.getElementById('dot-one-founder').classList.add('dot-active');
+
+        document.querySelector('.stefan-gutwirth img').src = founderImg[1];
+        document.querySelector('.stefan-gutwirth .info .info-name').textContent = founderName[1];
+        document.querySelector('.stefan-gutwirth .info .info-post').textContent = founderPost[1];
+    } else if (document.getElementById('dot-one-founder').classList.contains('dot-active-white')) {
+        document.getElementById('dot-one-founder').classList.remove('dot-active-white');
+        document.getElementById('dot-one-founder').classList.remove('dot-active');
+        document.getElementById('dot-zero-founder').classList.add('dot-active-white');
+        document.getElementById('dot-zero-founder').classList.add('dot-active');
+
+        document.querySelector('.stefan-gutwirth img').src = founderImg[0];
+        document.querySelector('.stefan-gutwirth .info .info-name').textContent = founderName[0];
+        document.querySelector('.stefan-gutwirth .info .info-post').textContent = founderPost[0];
+    }
 });
