@@ -322,6 +322,9 @@ body {
     backface-visibility: hidden;
     font-weight: bold;
 }
+.active-link{
+    font-weight: bold;
+}
 
 .list__item:not(:last-child) {
     margin-right: 4.7rem;
@@ -2082,6 +2085,8 @@ section:focus {
         background-color: #fff;
         border-radius: 50%;
     }
+
+
     /* .dot-white::after {
         content: '';
         position: absolute;
@@ -2178,11 +2183,12 @@ section:focus {
         justify-content: center;
         align-items: center;
         margin: 0;
+        height: 65px;
     }
 
     .brand__image:not(:last-child) {
         margin: 0;
-        margin-bottom: 2rem;
+        margin-bottom: 0rem;
     }
 
     .brand__image-two,
@@ -2280,6 +2286,11 @@ section:focus {
     #brands-heading {
         padding: 4rem 15rem 3rem 15rem !important;
         text-align: center;
+    }
+
+    .input-text{
+        font-size: 3rem;
+        margin-bottom: 3rem;
     }
 
     .portal__paragraph:first-of-type{
@@ -2413,6 +2424,26 @@ section:focus {
     }
     #checkbox-content {
         width: 90%;
+        font-size: 2.5rem;
+        line-height: 1.33;
+    }
+
+    .checkboxes-container div{
+        width: 100% !important;
+        
+    }
+
+    .checkbox-container .checkboxes-container-1 div{
+        width: 100%;
+    }
+
+    .checkbox-content{
+        padding: 0 1.5rem;
+        font-size: 2.5rem;
+    }
+
+    .form-btn-container{
+        text-align: center;
     }
 
     #__heading {

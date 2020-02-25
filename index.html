@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!--KROSCHKE-->
 <html lang="en">
 
 <head>
@@ -23,10 +22,10 @@
             </div>
 
             <ul class="header__navigation-list">
-                <li class="list__item"><a href="#benefits" class="list__link">Vorteile</a></li>
-                <li class="list__item"><a href="#services" class="list__link">Leistungen</a></li>
-                <li class="list__item"><a href="#about" class="list__link">Über Kroschke</a></li>
-                <li class="list__item">
+                <li id="list-item-1" class="list__item"><a href="#benefits" class="list__link">Vorteile</a></li>
+                <li id="list-item-2" class="list__item"><a href="#services" class="list__link">Leistungen</a></li>
+                <li id="list-item-3" class="list__item"><a href="#about" class="list__link">Über Kroschke</a></li>
+                <li id="list-item-4" class="list__item">
                     <a href="#contact" class="list__link">Kontakt</a>
                 </li>
                 <li class="list__item">
@@ -91,7 +90,7 @@
         </h2>
         <div class="row benefits__items ">
             <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-xs-12 benefits__item benefits__item-1">
-                <div class="benefits__item-content">
+                <div id="benefits-slide" class="benefits__item-content">
                     <img src="assets/group-8.svg" class="benefits__img Anfahrtszeiten_Icon" alt=""
                         id="benefits-img">
 
@@ -441,7 +440,7 @@ Audi Zentrum Wolfsburg GmbH
         </h2>
         <p class="about--secondary">Mit Ihrem erfahrenen Service-Partner</p>
         <div class="about__main">
-            <div class="about__tiles">
+            <div id="about-tiles" class="about__tiles">
                 <div class="about__tile tile-1">
                     <div class="about__tile-content">
                         <p class="about__tile-content--primary" id="abt-tile-1">ca. <span class="big-text"
@@ -576,7 +575,7 @@ Audi Zentrum Wolfsburg GmbH
         <h2 id="brands-heading" class="heading-2 heading-2--blue heading-2--center">
             MODERNE PROZESSE. ZERTIFIZIERTE QUALITÄT.
         </h2>
-        <div class="brands__images">
+        <div id="brands-images" class="brands__images">
             <img src="assets/sgs-tuv-iso-9001-tcl.png" alt="" class="brand__image brand__image-one">
             <img src="assets/ssl-logo.png" alt="" class="brand__image brand__image-two">
             <img src="assets/sgs-tuv-iso-27001-tcl.png" alt="" class="brand__image brand__image-three">
@@ -644,9 +643,11 @@ Audi Zentrum Wolfsburg GmbH
                             </label>
                         </div>
                     </div>
-                    <a href="" id="btn-form-1" class="btn btn-center btn-form">
-                        Jetzt anfragen
-                    </a>
+                    <div class="form-btn-container">
+                        <a href="" id="btn-form-1" class="btn btn-center btn-form">
+                            Jetzt anfragen
+                        </a>
+                    </div>
                     <div class="contact-detail">
                         <p>Kontaktieren Sie uns auch gerne direkt unter <span class="bold-text"><a
                                     href="tel: +49621887493"> +49 621 887 493</a> </span>
@@ -691,9 +692,11 @@ Audi Zentrum Wolfsburg GmbH
                             </label>
                         </div>
                     </div>
-                    <a href="" id="btn-form-2" class="btn btn-center btn-form">
-                        Jetzt anfragen
-                    </a>
+                    <div class="form-btn-container">
+                        <a href="" id="btn-form-2" class="btn btn-center btn-form">
+                            Jetzt anfragen
+                        </a>
+                    </div>
                     <div class="contact-detail">
                         <p>Kontaktieren Sie uns auch gerne direkt unter <span class="bold-text"><a
                                     href="tel:+49621887493"> +49 621 887 493 </a></span>
@@ -800,9 +803,11 @@ Audi Zentrum Wolfsburg GmbH
                             </label>
                         </div>
                     </div>
-                    <a href="" id="btn-form-3" class="btn btn-center btn-form">
-                        Jetzt anfragen
-                    </a>
+                    <div class="form-btn-container">
+                        <a href="" id="btn-form-3" class="btn btn-center btn-form">
+                            Jetzt anfragen
+                        </a>
+                    </div>
                     <div class="contact-detail">
                         <p>Kontaktieren Sie uns auch gerne direkt unter
                             <span class="bold-text"> <a href=""> 0800 XXX XXXX </a> </span></p>
@@ -927,8 +932,6 @@ Audi Zentrum Wolfsburg GmbH
     <!-- JAVA SCRIPT -->
    
 
-    <script src="https://code.jquery.com/jquery-3.4.1.js"
-        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
     <script src="js/app.js"></script>
 
 

@@ -51,10 +51,50 @@ $(document).ready(() => {
         list.slideToggle(200);
     });
 
+    $('#list-item-1').click(() => {
+        $('#list-item-1').addClass('active-link');
+        $('#list-item-2').removeClass('active-link');
+        $('#list-item-3').removeClass('active-link');
+        $('#list-item-4').removeClass('active-link');
+    });
+    $('#list-item-2').click(() => {
+        $('#list-item-2').addClass('active-link');
+        $('#list-item-1').removeClass('active-link');
+        $('#list-item-3').removeClass('active-link');
+        $('#list-item-4').removeClass('active-link');
+    });
+    $('#list-item-3').click(() => {
+        $('#list-item-3').addClass('active-link');
+        $('#list-item-2').removeClass('active-link');
+        $('#list-item-1').removeClass('active-link');
+        $('#list-item-4').removeClass('active-link');
+    });
+    $('#list-item-4').click(() => {
+        $('#list-item-4').addClass('active-link');
+        $('#list-item-2').removeClass('active-link');
+        $('#list-item-3').removeClass('active-link');
+        $('#list-item-1').removeClass('active-link');
+    });
+
     $('.reval').click(() => {
         var list = $('.hidden-items');
         list.slideToggle(200);
         list.css('display', 'flex');
+    });
+
+    $('#myCarousel').on('touchstart', function(event) {
+        var xClick = event.originalEvent.touches[0].pageX;
+        $('#myCarousel').one('touchmove', function(event) {
+            var xMove = event.originalEvent.touches[0].pageX;
+            if (Math.floor(xClick - xMove) > 5) {
+                $('#myCarousel').carousel('next');
+            } else if (Math.floor(xClick - xMove) < -5) {
+                $('#myCarousel').carousel('prev');
+            }
+        });
+        $('#myCarousel').on('touchend', function() {
+            $('#myCarousel').off('touchmove');
+        });
     });
 
     $('a[href*="#"]')
@@ -252,7 +292,7 @@ if (widthScreen < 800) {
         //             <p class="info-post">Gebietsleiter Süd</p>
         //         </div>
         //     </div>
-    }, 2000);
+    }, 4000);
 }
 
 if (widthScreen < 800) {
@@ -294,7 +334,7 @@ if (widthScreen < 800) {
                     primary[1] + '<span class="big-text">' + big[1] + '</span>';
             }
         }
-    }, 2000);
+    }, 4000);
 
     setInterval(() => {
         if (widthScreen < 800) {
@@ -331,7 +371,7 @@ if (widthScreen < 800) {
                 document.querySelector('.brand__image-one').src = path[0];
             }
         }
-    }, 2000);
+    }, 4000);
 
     setInterval(() => {
         if (widthScreen < 800) {
@@ -369,7 +409,7 @@ if (widthScreen < 800) {
                 logoNum = 0;
             }
         }
-    }, 2000);
+    }, 4000);
 }
 // SERVICES CAROUSEL{
 
@@ -404,24 +444,378 @@ document.querySelector('.btn-3').addEventListener('click', () => {
 
 var founderSlide = document.getElementById('founder-slide');
 
-founderSlide.addEventListener('touchstart', () => {
-    if (document.getElementById('dot-zero-founder').classList.contains('dot-active-white')) {
-        document.getElementById('dot-zero-founder').classList.remove('dot-active-white');
-        document.getElementById('dot-zero-founder').classList.remove('dot-active');
-        document.getElementById('dot-one-founder').classList.add('dot-active-white');
-        document.getElementById('dot-one-founder').classList.add('dot-active');
+var xCordStartFounder = 0,
+    xCordEndFounder = 0;
 
-        document.querySelector('.stefan-gutwirth img').src = founderImg[1];
-        document.querySelector('.stefan-gutwirth .info .info-name').textContent = founderName[1];
-        document.querySelector('.stefan-gutwirth .info .info-post').textContent = founderPost[1];
-    } else if (document.getElementById('dot-one-founder').classList.contains('dot-active-white')) {
-        document.getElementById('dot-one-founder').classList.remove('dot-active-white');
-        document.getElementById('dot-one-founder').classList.remove('dot-active');
-        document.getElementById('dot-zero-founder').classList.add('dot-active-white');
-        document.getElementById('dot-zero-founder').classList.add('dot-active');
+founderSlide.addEventListener('touchstart', (e) => {
+    xCordStartFounder = 0;
+    xCordStartFounder = e.touches[0].clientX;
+    // console.log(xCordStart);
+});
 
-        document.querySelector('.stefan-gutwirth img').src = founderImg[0];
-        document.querySelector('.stefan-gutwirth .info .info-name').textContent = founderName[0];
-        document.querySelector('.stefan-gutwirth .info .info-post').textContent = founderPost[0];
+founderSlide.addEventListener('touchmove', (e) => {
+    xCordEndFounder = 0;
+    xCordEndFounder = e.touches[0].clientX;
+    // console.log(xCordEnd);
+});
+
+founderSlide.addEventListener('touchend', (e) => {
+    if (xCordStartFounder - xCordEndFounder > 100 && xCordStartFounder - xCordEndFounder < 300) {
+        if (widthScreen < 800) {
+            if (
+                document.getElementById('dot-zero-founder').classList.contains('dot-active-white')
+            ) {
+                document.getElementById('dot-zero-founder').classList.remove('dot-active-white');
+                document.getElementById('dot-zero-founder').classList.remove('dot-active');
+                document.getElementById('dot-one-founder').classList.add('dot-active-white');
+                document.getElementById('dot-one-founder').classList.add('dot-active');
+
+                document.querySelector('.stefan-gutwirth img').src = founderImg[1];
+                document.querySelector('.stefan-gutwirth .info .info-name').textContent =
+                    founderName[1];
+                document.querySelector('.stefan-gutwirth .info .info-post').textContent =
+                    founderPost[1];
+            } else if (
+                document.getElementById('dot-one-founder').classList.contains('dot-active-white')
+            ) {
+                document.getElementById('dot-one-founder').classList.remove('dot-active-white');
+                document.getElementById('dot-one-founder').classList.remove('dot-active');
+                document.getElementById('dot-zero-founder').classList.add('dot-active-white');
+                document.getElementById('dot-zero-founder').classList.add('dot-active');
+
+                document.querySelector('.stefan-gutwirth img').src = founderImg[0];
+                document.querySelector('.stefan-gutwirth .info .info-name').textContent =
+                    founderName[0];
+                document.querySelector('.stefan-gutwirth .info .info-post').textContent =
+                    founderPost[0];
+            }
+        }
+    } else if (xCordStartFounder - xCordEndFounder < -100) {
+        if (widthScreen < 800) {
+            if (
+                document.getElementById('dot-zero-founder').classList.contains('dot-active-white')
+            ) {
+                document.getElementById('dot-zero-founder').classList.remove('dot-active-white');
+                document.getElementById('dot-zero-founder').classList.remove('dot-active');
+                document.getElementById('dot-one-founder').classList.add('dot-active-white');
+                document.getElementById('dot-one-founder').classList.add('dot-active');
+
+                document.querySelector('.stefan-gutwirth img').src = founderImg[1];
+                document.querySelector('.stefan-gutwirth .info .info-name').textContent =
+                    founderName[1];
+                document.querySelector('.stefan-gutwirth .info .info-post').textContent =
+                    founderPost[1];
+            } else if (
+                document.getElementById('dot-one-founder').classList.contains('dot-active-white')
+            ) {
+                document.getElementById('dot-one-founder').classList.remove('dot-active-white');
+                document.getElementById('dot-one-founder').classList.remove('dot-active');
+                document.getElementById('dot-zero-founder').classList.add('dot-active-white');
+                document.getElementById('dot-zero-founder').classList.add('dot-active');
+
+                document.querySelector('.stefan-gutwirth img').src = founderImg[0];
+                document.querySelector('.stefan-gutwirth .info .info-name').textContent =
+                    founderName[0];
+                document.querySelector('.stefan-gutwirth .info .info-post').textContent =
+                    founderPost[0];
+            }
+        }
+    } else {
+        console.log('touch');
+    }
+});
+
+// About Tiles Slider
+
+var aboutSlide = document.getElementById('about-tiles');
+
+var xCordStartAbout = 0,
+    xCordEndAbout = 0;
+
+aboutSlide.addEventListener('touchstart', (e) => {
+    xCordStartAbout = 0;
+    xCordStartAbout = e.touches[0].clientX;
+
+    // console.log(xCordStart);
+});
+
+aboutSlide.addEventListener('touchmove', (e) => {
+    xCordEndAbout = 0;
+    xCordEndAbout = e.touches[0].clientX;
+    // console.log(xCordEnd);
+});
+
+aboutSlide.addEventListener('touchend', (e) => {
+    if (xCordStartAbout - xCordEndAbout > 100 && xCordStartAbout - xCordEndAbout < 250) {
+        if (widthScreen < 800) {
+            document.getElementById('abt-tile-1').textContent = primary[0];
+            document.getElementById('abt-tile-2').textContent = primary[1];
+
+            if (document.getElementById('dot-one').classList.contains('dot-active-white')) {
+                document.getElementById('dot-one').classList.remove('dot-active-white');
+                document.getElementById('dot-one').classList.remove('dot-active');
+                document.getElementById('dot-two').classList.add('dot-active-white');
+                document.getElementById('dot-two').classList.add('dot-active');
+
+                document.getElementById('abt-tile-1').innerHTML =
+                    primary[2] + '<span class="big-text">' + big[2] + '</span>';
+                document.getElementById('abt-tile-2').innerHTML =
+                    primary[3] + '<span class="big-text">' + big[3] + '</span>';
+            } else if (document.getElementById('dot-two').classList.contains('dot-active-white')) {
+                document.getElementById('dot-two').classList.remove('dot-active-white');
+                document.getElementById('dot-two').classList.remove('dot-active');
+                document.getElementById('dot-three').classList.add('dot-active-white');
+                document.getElementById('dot-three').classList.add('dot-active');
+
+                document.getElementById('abt-tile-1').innerHTML =
+                    primary[4] + '<span class="big-text">' + big[4] + '</span>';
+                document.getElementById('abt-tile-2').innerHTML =
+                    primary[5] + '<span class="big-text">' + big[5] + '</span>';
+            } else if (
+                document.getElementById('dot-three').classList.contains('dot-active-white')
+            ) {
+                document.getElementById('dot-three').classList.remove('dot-active-white');
+                document.getElementById('dot-three').classList.remove('dot-active');
+                document.getElementById('dot-one').classList.add('dot-active-white');
+                document.getElementById('dot-one').classList.add('dot-active');
+                document.getElementById('abt-tile-1').innerHTML =
+                    primary[0] + '<span class="big-text">' + big[0] + '</span>';
+                document.getElementById('abt-tile-2').innerHTML =
+                    primary[1] + '<span class="big-text">' + big[1] + '</span>';
+            }
+        }
+    } else if (xCordStartAbout - xCordEndAbout < -100) {
+        if (widthScreen < 800) {
+            document.getElementById('abt-tile-1').textContent = primary[0];
+            document.getElementById('abt-tile-2').textContent = primary[1];
+
+            if (document.getElementById('dot-one').classList.contains('dot-active-white')) {
+                document.getElementById('dot-one').classList.remove('dot-active-white');
+                document.getElementById('dot-one').classList.remove('dot-active');
+                document.getElementById('dot-three').classList.add('dot-active-white');
+                document.getElementById('dot-three').classList.add('dot-active');
+
+                document.getElementById('abt-tile-1').innerHTML =
+                    primary[4] + '<span class="big-text">' + big[4] + '</span>';
+                document.getElementById('abt-tile-2').innerHTML =
+                    primary[5] + '<span class="big-text">' + big[5] + '</span>';
+            } else if (
+                document.getElementById('dot-three').classList.contains('dot-active-white')
+            ) {
+                document.getElementById('dot-three').classList.remove('dot-active-white');
+                document.getElementById('dot-three').classList.remove('dot-active');
+                document.getElementById('dot-two').classList.add('dot-active-white');
+                document.getElementById('dot-two').classList.add('dot-active');
+                document.getElementById('abt-tile-1').innerHTML =
+                    primary[2] + '<span class="big-text">' + big[2] + '</span>';
+                document.getElementById('abt-tile-2').innerHTML =
+                    primary[3] + '<span class="big-text">' + big[3] + '</span>';
+            } else if (document.getElementById('dot-two').classList.contains('dot-active-white')) {
+                document.getElementById('dot-two').classList.remove('dot-active-white');
+                document.getElementById('dot-two').classList.remove('dot-active');
+                document.getElementById('dot-one').classList.add('dot-active-white');
+                document.getElementById('dot-one').classList.add('dot-active');
+                document.getElementById('abt-tile-1').innerHTML =
+                    primary[0] + '<span class="big-text">' + big[0] + '</span>';
+                document.getElementById('abt-tile-2').innerHTML =
+                    primary[1] + '<span class="big-text">' + big[1] + '</span>';
+            }
+        }
+    } else {
+        console.log('touch');
+    }
+});
+
+// Brands Slide
+
+var brandsSlide = document.getElementById('brands-images');
+
+var xCordStartBrand = 0,
+    xCordEndBrand = 0;
+
+brandsSlide.addEventListener('touchstart', (e) => {
+    xCordStartBrand = 0;
+    xCordStartBrand = e.touches[0].clientX;
+
+    // console.log(xCordStart);
+});
+
+brandsSlide.addEventListener('touchmove', (e) => {
+    xCordEndBrand = 0;
+    xCordEndBrand = e.touches[0].clientX;
+    // console.log(xCordEnd);
+});
+
+brandsSlide.addEventListener('touchend', (e) => {
+    if (xCordStartBrand - xCordEndBrand > 100 && xCordStartBrand - xCordEndBrand < 250) {
+        if (widthScreen < 800) {
+            if (document.getElementById('dot-zero-brands').classList.contains('dot-active-white')) {
+                document.getElementById('dot-zero-brands').classList.remove('dot-active-white');
+                document.getElementById('dot-zero-brands').classList.remove('dot-active');
+                document.getElementById('dot-one-brands').classList.add('dot-active-white');
+                document.getElementById('dot-one-brands').classList.add('dot-active');
+
+                document.querySelector('.brand__image-one').src = path[1];
+            } else if (
+                document.getElementById('dot-one-brands').classList.contains('dot-active-white')
+            ) {
+                document.getElementById('dot-one-brands').classList.remove('dot-active-white');
+                document.getElementById('dot-one-brands').classList.remove('dot-active');
+                document.getElementById('dot-two-brands').classList.add('dot-active-white');
+                document.getElementById('dot-two-brands').classList.add('dot-active');
+                document.querySelector('.brand__image-one').src = path[2];
+            } else if (
+                document.getElementById('dot-two-brands').classList.contains('dot-active-white')
+            ) {
+                document.getElementById('dot-two-brands').classList.remove('dot-active-white');
+                document.getElementById('dot-two-brands').classList.remove('dot-active');
+                document.getElementById('dot-three-brands').classList.add('dot-active-white');
+                document.getElementById('dot-three-brands').classList.add('dot-active');
+                document.querySelector('.brand__image-one').src = path[3];
+            } else if (
+                document.getElementById('dot-three-brands').classList.contains('dot-active-white')
+            ) {
+                document.getElementById('dot-three-brands').classList.remove('dot-active-white');
+                document.getElementById('dot-three-brands').classList.remove('dot-active');
+                document.getElementById('dot-zero-brands').classList.add('dot-active-white');
+                document.getElementById('dot-zero-brands').classList.add('dot-active');
+                document.querySelector('.brand__image-one').src = path[0];
+            }
+        }
+    } else if (xCordStartBrand - xCordEndBrand < -100) {
+        if (widthScreen < 800) {
+            if (document.getElementById('dot-zero-brands').classList.contains('dot-active-white')) {
+                document.getElementById('dot-zero-brands').classList.remove('dot-active-white');
+                document.getElementById('dot-zero-brands').classList.remove('dot-active');
+                document.getElementById('dot-three-brands').classList.add('dot-active-white');
+                document.getElementById('dot-three-brands').classList.add('dot-active');
+
+                document.querySelector('.brand__image-one').src = path[3];
+            } else if (
+                document.getElementById('dot-three-brands').classList.contains('dot-active-white')
+            ) {
+                document.getElementById('dot-three-brands').classList.remove('dot-active-white');
+                document.getElementById('dot-three-brands').classList.remove('dot-active');
+                document.getElementById('dot-two-brands').classList.add('dot-active-white');
+                document.getElementById('dot-two-brands').classList.add('dot-active');
+                document.querySelector('.brand__image-one').src = path[2];
+            } else if (
+                document.getElementById('dot-two-brands').classList.contains('dot-active-white')
+            ) {
+                document.getElementById('dot-two-brands').classList.remove('dot-active-white');
+                document.getElementById('dot-two-brands').classList.remove('dot-active');
+                document.getElementById('dot-one-brands').classList.add('dot-active-white');
+                document.getElementById('dot-one-brands').classList.add('dot-active');
+                document.querySelector('.brand__image-one').src = path[1];
+            } else if (
+                document.getElementById('dot-one-brands').classList.contains('dot-active-white')
+            ) {
+                document.getElementById('dot-one-brands').classList.remove('dot-active-white');
+                document.getElementById('dot-one-brands').classList.remove('dot-active');
+                document.getElementById('dot-zero-brands').classList.add('dot-active-white');
+                document.getElementById('dot-zero-brands').classList.add('dot-active');
+                document.querySelector('.brand__image-one').src = path[0];
+            }
+        }
+    } else {
+        console.log('touch');
+    }
+});
+
+//Benefits Slide
+
+var benefitsSlide = document.getElementById('benefits-slide');
+
+var xCordStartBenefit = 0,
+    xCordEndBenefit = 0;
+
+benefitsSlide.addEventListener('touchstart', (e) => {
+    xCordStartBenefit = 0;
+    xCordStartBenefit = e.touches[0].clientX;
+
+    // console.log(xCordStart);
+});
+
+benefitsSlide.addEventListener('touchmove', (e) => {
+    xCordEndBenefit = 0;
+    xCordEndBenefit = e.touches[0].clientX;
+    // console.log(xCordEnd);
+});
+
+benefitsSlide.addEventListener('touchend', (e) => {
+    if (xCordStartBenefit - xCordEndBenefit > 100 && xCordStartBenefit - xCordEndBenefit < 250) {
+        if (widthScreen < 800) {
+            if (logoNum === 0) {
+                document.getElementById('benefits-img').src = logo[1];
+                document.getElementById('benefits-heading').textContent = logoHeading[1];
+                document.getElementById('benefits-content').textContent = logoContent[1];
+
+                document.getElementById('dot-zero-benefit').classList.remove('dot-active');
+                document.getElementById('dot-one-benefit').classList.add('dot-active');
+                logoNum = 1;
+            } else if (logoNum === 1) {
+                document.getElementById('benefits-img').src = logo[2];
+                document.getElementById('benefits-heading').textContent = logoHeading[2];
+                document.getElementById('benefits-content').textContent = logoContent[2];
+
+                document.getElementById('dot-one-benefit').classList.remove('dot-active');
+                document.getElementById('dot-two-benefit').classList.add('dot-active');
+                logoNum = 2;
+            } else if (logoNum === 2) {
+                document.getElementById('benefits-img').src = logo[3];
+                document.getElementById('benefits-heading').textContent = logoHeading[3];
+                document.getElementById('benefits-content').textContent = logoContent[3];
+
+                document.getElementById('dot-two-benefit').classList.remove('dot-active');
+                document.getElementById('dot-three-benefit').classList.add('dot-active');
+                logoNum = 3;
+            } else if (logoNum === 3) {
+                document.getElementById('benefits-img').src = logo[0];
+                document.getElementById('benefits-heading').textContent = logoHeading[0];
+                document.getElementById('benefits-content').textContent = logoContent[0];
+
+                document.getElementById('dot-three-benefit').classList.remove('dot-active');
+                document.getElementById('dot-zero-benefit').classList.add('dot-active');
+                logoNum = 0;
+            }
+        }
+    } else if (xCordStartBenefit - xCordEndBenefit < -100) {
+        if (widthScreen < 800) {
+            if (logoNum === 0) {
+                document.getElementById('benefits-img').src = logo[3];
+                document.getElementById('benefits-heading').textContent = logoHeading[3];
+                document.getElementById('benefits-content').textContent = logoContent[3];
+
+                document.getElementById('dot-zero-benefit').classList.remove('dot-active');
+                document.getElementById('dot-three-benefit').classList.add('dot-active');
+                logoNum = 3;
+            } else if (logoNum === 3) {
+                document.getElementById('benefits-img').src = logo[2];
+                document.getElementById('benefits-heading').textContent = logoHeading[2];
+                document.getElementById('benefits-content').textContent = logoContent[2];
+
+                document.getElementById('dot-three-benefit').classList.remove('dot-active');
+                document.getElementById('dot-two-benefit').classList.add('dot-active');
+                logoNum = 2;
+            } else if (logoNum === 2) {
+                document.getElementById('benefits-img').src = logo[1];
+                document.getElementById('benefits-heading').textContent = logoHeading[1];
+                document.getElementById('benefits-content').textContent = logoContent[1];
+
+                document.getElementById('dot-two-benefit').classList.remove('dot-active');
+                document.getElementById('dot-one-benefit').classList.add('dot-active');
+                logoNum = 1;
+            } else if (logoNum === 1) {
+                document.getElementById('benefits-img').src = logo[0];
+                document.getElementById('benefits-heading').textContent = logoHeading[0];
+                document.getElementById('benefits-content').textContent = logoContent[0];
+
+                document.getElementById('dot-one-benefit').classList.remove('dot-active');
+                document.getElementById('dot-zero-benefit').classList.add('dot-active');
+                logoNum = 0;
+            }
+        }
+    } else {
+        console.log('touch');
     }
 });
