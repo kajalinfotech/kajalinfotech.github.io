@@ -1415,12 +1415,36 @@ section:focus {
     line-height: 1.33;
 }
 
+.footer {
+    justify-content: space-between !important;
+}
+
+.footer__content {
+    margin: 0 4rem 0 0 !important;
+}
+.footer__links {
+    margin: 0;
+    padding: 0 15rem 0 0 !important;
+}
+
 /* Media Queries */
 
 @media only screen and (max-width: 1200px) {
     .header__hero-text--secondary {
         width: 90%;
         font-size: 3rem;
+    }
+
+    .footer {
+        justify-content: space-between;
+    }
+
+    .footer__content {
+        margin: 0 0rem 0 0;
+    }
+    .footer__links {
+        margin: 0;
+        padding: 0 15rem 0 0;
     }
     html {
         font-size: 56.25%;
@@ -1492,6 +1516,18 @@ section:focus {
 @media only screen and (max-width: 1000px) {
     html {
         font-size: 50%;
+    }
+
+    .footer {
+        justify-content: space-between;
+    }
+
+    .footer__content {
+        margin: 0 0rem 0 0;
+    }
+    .footer__links {
+        margin: 0;
+        padding: 0 15rem 0 0;
     }
     .portal__img {
         width: 400px;
@@ -2629,16 +2665,86 @@ section:focus {
     }
 }
 
-@media only screen and (min-width: 1800px) {
-    html {
-        font-size: 75%;
-    }
-}
-
 @media (min-width: 768px) {
     .container,
     .container-md,
     .container-sm {
         max-width: 100%;
+    }
+}
+
+@media only screen and (min-width: 1500px) {
+    #myCarousel {
+        height: 45vh;
+        min-height: 45vh;
+    }
+    .carousel-indicators {
+        bottom: 40px !important;
+    }
+}
+
+@media only screen and (min-width: 1700px) {
+    #myCarousel {
+        height: 40vh;
+        min-height: 40vh;
+    }
+    .carousel-indicators {
+        bottom: 40px !important;
+    }
+}
+
+@media only screen and (min-width: 1800px) {
+    html {
+        font-size: 75%;
+    }
+
+    .footer {
+        justify-content: space-between;
+    }
+
+    .footer__content {
+        margin: 0 0rem 0 0;
+    }
+    .footer__links {
+        margin: 0;
+        padding: 0 15rem 0 0;
+    }
+    #myCarousel {
+        height: 40vh;
+        min-height: 40vh;
+    }
+    .about__tile-content--primary {
+        line-height: 1.2;
+    }
+    .about__description-content {
+        width: 100%;
+    }
+    .about__description {
+        margin-right: 25rem;
+    }
+    .about__tiles {
+        grid-template-columns: repeat(2, minmax(300px, 1fr));
+        grid-template-rows: repeat(3, minmax(200px, 1fr));
+    }
+}
+
+@media only screen and (min-width: 2000px) {
+    #myCarousel {
+        height: 40vh;
+        min-height: 40vh;
+    }
+    .carousel-indicators {
+        bottom: 40px !important;
+    }
+}
+
+@media only screen and (min-width: 2200px) {
+    #myCarousel {
+        height: 30vh;
+        min-height: 30vh;
+    }
+
+    .about__tiles {
+        margin-left: 25rem;
     }
 }
