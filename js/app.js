@@ -230,7 +230,6 @@ var path = [
 var logo = [
     'assets/group-8.svg',
     'assets/group-22_2.svg',
-    'assets/group-9.svg',
     'assets/group-22.svg'
 ];
 
@@ -243,12 +242,11 @@ var sub = [
     'Kennzeichen pro Jahr'
 ];
 
-var logoHeading = ['Schnell', 'In Ihrer Nähe', 'Entlastend', 'Zuverlässig'];
+var logoHeading = ['Schnell', 'In Ihrer Nähe', 'Zuverlässig'];
 
 var logoContent = [
     'Lassen Sie Fahrzeuge regional innerhalb von 24 Stunden, bundesweit innerhalb von 72 Stunden zu.',
     'Ob regional oder bundesweit: Durch unsere 500 Standorte machen wir Zulassungen in allen Kreisen möglich.',
-    'Unser Service schont die Ressourcen Ihrer Mitarbeiter, um Ihre Produk-tivität im Tagesgeschäft zu steigern.',
     'Als Branchenexperte mit über 60 Jahren Automotive-Knowhow bietet Kroschke Ihnen professionelle Prozesse im Zulassungsdienst.'
 ];
 
@@ -447,19 +445,11 @@ if (widthScreen < 800) {
                 document.getElementById('dot-two-benefit').classList.add('dot-active');
                 logoNum = 2;
             } else if (logoNum === 2) {
-                document.getElementById('benefits-img').src = logo[3];
-                document.getElementById('benefits-heading').textContent = logoHeading[3];
-                document.getElementById('benefits-content').textContent = logoContent[3];
-
-                document.getElementById('dot-two-benefit').classList.remove('dot-active');
-                document.getElementById('dot-three-benefit').classList.add('dot-active');
-                logoNum = 3;
-            } else if (logoNum === 3) {
                 document.getElementById('benefits-img').src = logo[0];
                 document.getElementById('benefits-heading').textContent = logoHeading[0];
                 document.getElementById('benefits-content').textContent = logoContent[0];
 
-                document.getElementById('dot-three-benefit').classList.remove('dot-active');
+                document.getElementById('dot-two-benefit').classList.remove('dot-active');
                 document.getElementById('dot-zero-benefit').classList.add('dot-active');
                 logoNum = 0;
             }
@@ -901,19 +891,11 @@ benefitsSlide.addEventListener('touchend', (e) => {
                 document.getElementById('dot-two-benefit').classList.add('dot-active');
                 logoNum = 2;
             } else if (logoNum === 2) {
-                document.getElementById('benefits-img').src = logo[3];
-                document.getElementById('benefits-heading').textContent = logoHeading[3];
-                document.getElementById('benefits-content').textContent = logoContent[3];
-
-                document.getElementById('dot-two-benefit').classList.remove('dot-active');
-                document.getElementById('dot-three-benefit').classList.add('dot-active');
-                logoNum = 3;
-            } else if (logoNum === 3) {
                 document.getElementById('benefits-img').src = logo[0];
                 document.getElementById('benefits-heading').textContent = logoHeading[0];
                 document.getElementById('benefits-content').textContent = logoContent[0];
 
-                document.getElementById('dot-three-benefit').classList.remove('dot-active');
+                document.getElementById('dot-two-benefit').classList.remove('dot-active');
                 document.getElementById('dot-zero-benefit').classList.add('dot-active');
                 logoNum = 0;
             }
@@ -921,22 +903,14 @@ benefitsSlide.addEventListener('touchend', (e) => {
     } else if (xCordStartBenefit - xCordEndBenefit < -100) {
         if (widthScreen < 800) {
             if (logoNum === 0) {
-                document.getElementById('benefits-img').src = logo[3];
-                document.getElementById('benefits-heading').textContent = logoHeading[3];
-                document.getElementById('benefits-content').textContent = logoContent[3];
-
-                document.getElementById('dot-zero-benefit').classList.remove('dot-active');
-                document.getElementById('dot-three-benefit').classList.add('dot-active');
-                logoNum = 3;
-            } else if (logoNum === 3) {
                 document.getElementById('benefits-img').src = logo[2];
                 document.getElementById('benefits-heading').textContent = logoHeading[2];
                 document.getElementById('benefits-content').textContent = logoContent[2];
 
-                document.getElementById('dot-three-benefit').classList.remove('dot-active');
+                document.getElementById('dot-zero-benefit').classList.remove('dot-active');
                 document.getElementById('dot-two-benefit').classList.add('dot-active');
                 logoNum = 2;
-            } else if (logoNum === 2) {
+            }else if (logoNum === 2) {
                 document.getElementById('benefits-img').src = logo[1];
                 document.getElementById('benefits-heading').textContent = logoHeading[1];
                 document.getElementById('benefits-content').textContent = logoContent[1];

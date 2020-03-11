@@ -2487,6 +2487,12 @@ section:focus {
     }
     .carousel__content--secondary {
         padding: 0 0rem;
+    }    
+    #btn-form-1,
+    #btn-form-2,
+    #btn-form-3 {
+        padding: 10px 70px !important;
+        font-size: 18px;
     }
 }
 
