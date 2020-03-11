@@ -237,7 +237,7 @@ var sub = [
     'Kfz-Zulassungen/Jahr',
     'Euro Gesamtumsatz',
     'Autohaus-Kunden in der Betreuung',
-    'FahrzeughÜberfÜhrungen im Jahr',
+    'Fahrzeugüberführungen im Jahr',
     'gelagerte Kfz-SchlÜssel',
     'Kennzeichen pro Jahr'
 ];
