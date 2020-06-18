@@ -37,7 +37,7 @@ a.nav-link:hover {
 .main-bg-image{content: "";
     height: 100%;
     width: 100%;
-    background: url(../images/Street_Straße.svg) center -70px / 100% no-repeat;
+    background: url(../images/THV_LP_Street_Illustration.svg) center -70px / 100% no-repeat;
 	background-repeat: no-repeat;z-index: -1;}
 	.first-image-part img {
 		position: absolute;top: -185px;
@@ -58,18 +58,23 @@ a.nav-link:hover {
 	} */
 .first-text-part {width: 100%;}
 .first-image-part {width: 100%;}
-.first-text-part h1 {
-	font-size: 42px;
-	font-weight: bold;
-	font-stretch: condensed;
-	font-style: normal;text-transform: uppercase;
-    font-family: HDI-GerlingSans;margin: 0;
-	color: #009c33;max-width: 646px;width: 100%;}
+.first-text-part h1 {width: 981px;height: 96px;font-family: HDI-GerlingSans;font-size: 42px;
+  font-weight: bold;
+  font-stretch: condensed;
+  font-style: normal;
+  line-height: 1.14;
+  letter-spacing: normal;
+  color: #009c33;text-transform: uppercase;}
 .first-text-part h4 {
-	font-size: 30px;
-	font-weight: normal;
-	font-stretch: condensed;
-	font-style: normal;margin: 17px 0 37px;max-width: 444px;width: 100%;}
+    width: 400px;
+    font-size: 30px;
+    font-weight: normal;
+    font-stretch: condensed;
+    font-style: normal;
+    line-height: 1.2;
+    letter-spacing: 1.5px;
+    margin: 14px 0 50px;
+    color: #000000;}
 .first-text-part ul li {
 	font-size: 19px;
 	font-stretch: condensed;
@@ -131,7 +136,7 @@ a.nav-link:hover {
     letter-spacing: normal;
 	font-weight:normal ;
 }
-b{font-weight: bold !important;}
+.bold , b{font-weight: bold !important;}
 
 .forth-part-text p{
 	max-width: 437px;width: 100%;
@@ -139,9 +144,9 @@ b{font-weight: bold !important;}
 }
 .fift-text-part {
 	text-align: center;
-	max-width: 485px;
+	max-width: 583px;
 	width: 100%;
-    height: 176px;
+    height: 196px;
 	margin: 0 auto;
 	margin: 30px auto 0;
 }
@@ -202,7 +207,7 @@ b{font-weight: bold !important;}
 			padding-right: 10px; margin: 0;
 		}
 		.first-text-part .sm-center {
-			margin-top: 14px;
+			margin-top: 5px;
 		}
 
 /* top part */
@@ -217,7 +222,7 @@ b{font-weight: bold !important;}
 .switching-part {
 	width: 100%;
 	float: left;
-	padding-bottom: 60px;
+	padding-bottom: 100px;
 }
 
 .switching-part h3 {
@@ -243,7 +248,7 @@ b{font-weight: bold !important;}
     line-height: 1.9;
     color: #000000;
     font-family: HDI-GerlingSans-light;
-    padding-bottom: 38px;
+    padding-bottom: 37px;
 }
 
 .switching-part-section ul {
@@ -252,7 +257,7 @@ b{font-weight: bold !important;}
 }
 
 .switching-part {
-    padding-top: 40px;}
+    padding-top: 70px;}
 
 .switching-part-section ul li {
 	list-style-type: none;
@@ -349,8 +354,13 @@ li.img-last-part {
 .protaction-table-section {
 	max-width: 375px;
 	float: left;
-	width: 33.33%;
+	width: 375%;
 }
+.custom-width .item {
+    display: flex;
+    justify-content: center;
+}
+.m-l-11{margin-left: 11px;}
 
 .bg-green {
 	background: #e6f5ec;
@@ -483,8 +493,18 @@ button.btn.btn-3.btn-3a.icon-cart.bg-green-btn.m-b-36 {
 	;
 }
 
-.image-part img {
+/* .image-part img {
 	margin-top: -23px;max-height: 250px;margin-bottom: -6px;
+} */
+.image-part img.horse-first {
+    margin-top: -37px;
+    max-height: 135px;
+    margin-bottom: 15px;
+}
+.image-part img.horse-second {
+    margin-top: -39px;
+    max-height: 155px;
+    margin-bottom: 55px;
 }
 
 .image-part {
@@ -498,7 +518,7 @@ button.btn.btn-3.btn-3a.icon-cart.bg-green-btn.m-b-36 {
 .color-orange .image-part {
     border: 2px solid #ef8a29;    border-bottom: 0;
 }
-.image-part-height{height: 250px;}
+.image-part-height{height: 210px;}
 .protaction-table-main {
     width: 100%;
 	float: left;display: flex;    
@@ -512,6 +532,7 @@ button.btn.btn-3.btn-3a.icon-cart.bg-green-btn.m-b-36 {
 .m-l-r-10 {
 	margin: 0 10px
 }
+.m-l-10{margin-left: 11px;}
 
 .m-l-r-11 {
     margin: 0 11px;
@@ -538,7 +559,7 @@ h3.protaction-title {
     line-height: 1.5;
     letter-spacing: normal;
 	color: #000000;
-	margin: 31px 0 15px;
+	margin: 31px 0 0;
 }
 
 .protaction-table-section h5 {
@@ -546,7 +567,7 @@ h3.protaction-title {
     font-weight: 300;
     font-stretch: condensed;
     font-style: normal;
-    line-height: 2.06;
+    line-height: 1.6;
     letter-spacing: normal;
     color: #000000;
     margin: 0;
@@ -579,7 +600,7 @@ h3.protaction-title {
 	color: #009c33;
 	width: 240px;
     height: 50px;
-	margin: 34px 0 33px 0;;font-size: 19px;
+	margin: 25px 0 33px 0;;font-size: 19px;
 	font-weight: bold;font-family: HDI-GerlingSans;}
 
 }
@@ -646,9 +667,9 @@ h3.protaction-title {
     float: left;
     font-size: 30px;
     font-weight: bold;
-    line-height: 1.1;
+    line-height: 2.1;
 	color: #009c33;
-	margin-top: 76px;
+	margin-top: 90px;
 }
 
 .acordian-bottom-part-title p {
@@ -726,7 +747,7 @@ img.aword-img2 {
     margin-top: 0px;
 }
 .accordian-slider .owl-dots {
-    margin: 43px 0 26px 0;
+    margin: 67px 0 30px 0;display: block !important;
 }
 .faq-section {
 	width: 100%;
@@ -874,14 +895,12 @@ a:hover {
 
 .main-content .owl-theme .custom-nav .owl-prev i,
 .main-content .owl-theme .custom-nav .owl-next i {
-	font-size: 2.5rem;
-	color: #cecece;
+	font-size: 40px;
 }
 
 .main-content .owl-theme .custom-nav .owl-prev {
 	left: -20px;
 	height: 40px;
-	background: rgba(0, 156, 51, 0.45);
 	width: 40px;
 	padding: 0;
 }
@@ -889,7 +908,6 @@ a:hover {
 .main-content .owl-theme .custom-nav .owl-next {
 	right: -20px;
 	height: 40px;
-	background: rgba(0, 156, 51, 0.45);
 	width: 40px;
 	padding: 0;
 }
@@ -937,31 +955,24 @@ a:hover {
 	/* float: left; */
 }
 
-.image-test {
-	height: 500px;
+
+
+
+img.aword-img1 {
+    right: 0;
+    height: 380px;
+    position: absolute;
+    bottom: 0;
+    display: inline-block;
+}
+.aword-part-taxt-title {
+    padding-top: 30px;
+    width: 563px;
+    height: 149px;
 }
 
-.img-1 {
-	background: url(../images/HDI_LP_WGV_Illustration_Happy_Family-01.png)left 0px top 0px no-repeat;
-	height: 330px;
-	width: 250px;
-	background-size: cover;
-	/* z-index: 9999999; */
-	float: left;
-	margin-right: 10px;
-}
-
-.img-2 {
-	background: url(../images/HDI_LP_WGV_Illustration_Happy_Family-02.png);
-	/* height: 200px; */
-	/* width: 100%; */
-	height: 295px;
-	width: 320px;
-	background-size: cover;
-	float: left;
-}
 .protaction-table-section .sm-center {
-    height: 110px;
+    height: 123px;
 }
 
 .aword-part-taxt h3 {
@@ -1110,7 +1121,15 @@ a:hover {
     width: 100%;
     text-align: left;
     padding-left: 20px;
-    padding-bottom: 30px;
+    padding-bottom: 36px;
+    padding-top: 27px;
+}
+.pdf-dowunlod-part.text-center {
+    width: 100%;
+    float: left;
+    text-align: center;
+    display: flex;
+    justify-content: center;
 }
 .open-more-option a{position: relative;}
 
@@ -1192,16 +1211,16 @@ ul.hegiht-protection {
 
 .btn-3a.bg-orang-btn {
 	padding: 10px 60px 10px 15px;
-	max-width: 280px;
+    max-width: 300px;
+    width: 300px;
     height: 55px;
 	background: #ff9632;
 	position: relative;
 	color: #fff;
 	font-size: 20px;box-shadow: 2px 2px 5px #ff9632;
 	font-weight: bold;
-	font-family: HDI-GerlingSans;
-  font-size: 20px;
-  font-weight: bold;
+    font-family: HDI-GerlingSans;
+    font-stretch: condensed;
 }
 .btn-3a.bg-orang-btn:hover{background: #ff9632;}
 .btn-3.bg-orang-btn {
@@ -1213,7 +1232,7 @@ ul.hegiht-protection {
 
 .btn-3a.bg-green-btn {
 	padding: 10px 60px 10px 15px;
-	width: 280px;
+	width: 270px;
     height: 55px;
 	background: #009c33;
 	position: relative;
@@ -1365,9 +1384,46 @@ ul.footer-icon img{margin-top:10px ;}
     padding: 3px;
     border-radius: 50px;
 }
+.aword-section-part {
+    width: 100%;
+    float: left;
+    text-align: center;
+}
+.aword-section-box {
+    width: 375px;
+    height: 360px;
+    border-radius: 5px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    background-color: #ffffff; margin: 0 auto 35px; padding-top: 47px;
+  }
+  .aword-section-box h3 {
+    width: 372.9px;
+    height: 36px;
+    font-family: HDI-GerlingSans;
+    font-size: 22px;
+    font-weight: bold;
+    font-stretch: condensed;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    color: #000000;
+    padding: 40px 0 8px;
+  }
+  .aword-section-box h4 {
+    width: 375px;
+    height: 42px;
+    font-size: 16px;
+    font-weight: 300;
+    font-stretch: condensed;
+    font-style: normal;
+    line-height: 2.06;
+    letter-spacing: normal;
+    color: #000000;
+  }
+  .aword-section-box h4 span{font-size: 40px;
+    color: #009c33;}
 
-
-
+    .bg-green.p-60{padding-bottom: 80px !important;}
 
 
 /*  */
