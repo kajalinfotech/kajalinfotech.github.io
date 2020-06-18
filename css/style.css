@@ -537,7 +537,12 @@ button.btn.btn-3.btn-3a.icon-cart.bg-green-btn.m-b-36 {
 .m-l-r-11 {
     margin: 0 11px;
 }
-
+.footer-last-taxt a:hover {
+    font-weight: bold;
+    font-family: HDI-GerlingSans;
+    transition: all 1s ease-in-out;
+    transition-duration: 2s;
+}
 h3.protaction-title {
 	padding: 8px 0 5px 0;
 	font-size: 19px;
@@ -911,6 +916,49 @@ a:hover {
 	width: 40px;
 	padding: 0;
 }
+
+/*  */
+.main-content1 {
+	position: relative;
+}
+
+.main-content1 .owl-theme .custom-nav1 {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	right: 0;
+}
+
+.main-content1 .owl-theme .custom-nav1 .owl-prev,
+.main-content1 .owl-theme .custom-nav1 .owl-next {
+	position: absolute;
+	height: 100px;
+	color: inherit;
+	background: none;
+	border: none;
+	z-index: 100;
+}
+
+.main-content1 .owl-theme .custom-nav1 .owl-prev i,
+.main-content1 .owl-theme .custom-nav1 .owl-next i {
+	font-size: 40px;
+}
+
+.main-content1 .owl-theme .custom-nav1 .owl-prev {
+	left: -20px;
+	height: 40px;
+	width: 40px;
+	padding: 0;
+}
+
+.main-content1 .owl-theme .custom-nav1 .owl-next {
+	right: -20px;
+	height: 40px;
+	width: 40px;
+	padding: 0;
+}
+
+/*  */
 
 .arrow-class {
 	position: relative;
@@ -1355,7 +1403,11 @@ li.bold-taxt {
     left: 60px;
 }
 ul.footer-last-taxt {
-    padding: 82px 60px 63px 0 !important;
+    padding: 82px 50px 63px 0 !important;
+    width: 155px;
+    display: flex;
+    flex-direction: column;
+    float: left;
 }
 ul.footer-icon {
     padding: 82px 82px 63px 0 !important;
