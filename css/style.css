@@ -20,13 +20,9 @@ button:focus {
 	outline: none;
 }
 a.nav-link:hover {
-    font-size: 16px;
-  font-weight: bold;
-  font-stretch: condensed;
-  font-style: normal;
-  line-height: 1.63;
-  letter-spacing: 0.8px;
-  color: #009c33;
+    font-weight: bold;
+    color: #009c33;
+    text-shadow: 0 0 0.65px #009c33, 0 0 0.65px #009c33;
 }
 .opacity-none{opacity: 0;}
 .m-t28-b33{margin: 30px 0 33px;}
@@ -66,7 +62,7 @@ a.nav-link:hover {
   letter-spacing: normal;
   color: #009c33;text-transform: uppercase;}
 .first-text-part h4 {
-    width: 400px;
+    width: 680px;
     font-size: 30px;
     font-weight: normal;
     font-stretch: condensed;
@@ -74,7 +70,8 @@ a.nav-link:hover {
     line-height: 1.2;
     letter-spacing: 1.5px;
     margin: 14px 0 50px;
-    color: #000000;}
+    color: #000000;
+    font-family: HDI-GerlingSans-normal;}
 .first-text-part ul li {
 	font-size: 19px;
 	font-stretch: condensed;
@@ -1018,6 +1015,12 @@ img.aword-img1 {
     width: 563px;
     height: 149px;
 }
+.top-navbar .fixed-top.shrink {
+    padding: 5px 65px 10px;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.10s ease;
+    box-shadow: -1px -2px 6px 2px #454545;
+}
 
 .protaction-table-section .sm-center {
     height: 123px;
@@ -1196,7 +1199,7 @@ img.aword-img1 {
 }
 .open-more-option a {
     padding-left: 40px;font-size: 16px;
-    font-weight: bold;cursor: pointer;
+    font-weight: bold;cursor: pointer;font-family: HDI-GerlingSans;
 }
 .open-more-option .accordion-toggle:after {
     content: "";
