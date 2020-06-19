@@ -12,6 +12,10 @@
 /* Small devices (portrait tablets and large phones, 767px and up) */
 
 @media only screen and (max-width: 767px) {
+
+	.collapse.show a.nav-link:hover {
+		font-weight: bold;
+	}
 	.nav-up {
 		top: -85px;
 	}
@@ -521,7 +525,6 @@
 			.collapse.show a.nav-link {
 				color: #fff;
 				font-size: 19px;
-				font-weight: bold;
 			}
 			.top-navbar a.navbar-brand {padding: 20px 15px;}
 			.top-navbar .navbar-toggler {padding: 20px 15px;}
