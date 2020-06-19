@@ -133,7 +133,7 @@ a.nav-link:hover {
     letter-spacing: normal;
 	font-weight:normal ;
 }
-.bold , b{font-weight: bold !important;}
+.bold , b{font-weight: bold !important; font-family: HDI-GerlingSans;}
 
 .forth-part-text p{
 	max-width: 437px;width: 100%;
