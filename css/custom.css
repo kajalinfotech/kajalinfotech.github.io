@@ -12,6 +12,12 @@
 /* Small devices (portrait tablets and large phones, 767px and up) */
 
 @media only screen and (max-width: 767px) {
+	.nav-up {
+		top: -85px;
+	}
+	.top-navbar a.navbar-brand {
+		padding: 20px 15px;
+	}
 	.top-first-part {
 		padding-top: 55px;
 	}
