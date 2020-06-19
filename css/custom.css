@@ -15,6 +15,8 @@
 	.nav-up {
 		top: -85px;
 	}
+	.top-navbar .fixed-top.shrink {
+		padding: 0;}
 	.top-navbar a.navbar-brand {
 		padding: 20px 15px;
 	}
@@ -1051,12 +1053,12 @@
 }
 
 .top-forth-part-image {
-    z-index: -1;
+    z-index: 1;
     padding-top: 0;
     position: absolute;
-    top: 1497px;
+    top: 1482px;
     right: 90px;
-    width: 85%;
+    width: 52% !important;
 }
 .top-fift-part {
     position: absolute;

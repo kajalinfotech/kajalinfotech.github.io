@@ -598,6 +598,7 @@ h3.protaction-title {
 }
 
 .border-btn {
+    padding: 10px 0 0 0;
 	border: 1.5px solid #28994b;
 	color: #009c33;
 	width: 240px;
@@ -1016,7 +1017,7 @@ img.aword-img1 {
     height: 149px;
 }
 .top-navbar .fixed-top.shrink {
-    padding: 0;
+    padding: 0 65px;
     -webkit-transition: all 0.4s ease;
     transition: all 0.10s ease;
     box-shadow: -1px -2px 6px 2px #454545;
@@ -1264,7 +1265,7 @@ ul.hegiht-protection {
 }
 
 .btn-3a.bg-orang-btn {
-	padding: 10px 60px 10px 15px;
+	padding: 12px 60px 10px 15px;
     max-width: 300px;
     width: 300px;
     height: 55px;
@@ -1285,7 +1286,7 @@ ul.hegiht-protection {
 }
 
 .btn-3a.bg-green-btn {
-	padding: 10px 60px 10px 15px;
+	padding: 12px 60px 10px 15px;
 	width: 270px;
     height: 55px;
 	background: #009c33;
