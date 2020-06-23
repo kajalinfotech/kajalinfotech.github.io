@@ -12,6 +12,21 @@
 /* Small devices (portrait tablets and large phones, 767px and up) */
 
 @media only screen and (max-width: 767px) {
+	.navbar-nav li.nav-item.pl-4 {
+		padding-left: 0 !important;
+	}
+	.navbar-brand img {
+		width: 80px;
+	}
+	.top-navbar .fixed-top.shrink, .top-navbar .fixed-top {
+		padding: 0;
+	}
+	.top-navbar .fixed-top.shrink a.navbar-brand {
+		padding: 10px;
+	}
+	.top-navbar .fixed-top.shrink .navbar-toggler {
+		padding: 10px;
+	}
 
 	.collapse.show a.nav-link:hover {
 		font-weight: bold;
@@ -25,7 +40,7 @@
 		padding: 20px 15px;
 	}
 	.top-first-part {
-		padding-top: 55px;
+		padding-top: 30px;
 	}
 	.footer-image img {
 		width: 124px;
@@ -154,7 +169,7 @@
 	}
 	.first-image-part {
 		position: inherit;
-		max-width: 375px;
+		max-width: 100%;
 		margin: 0 auto;
 	}
 	.first-image-part img {
@@ -178,7 +193,7 @@
 		height: 55px;
 		font-family: HDI-GerlingSans;
 		font-size: 20px;
-		padding: 10px 50px 10px 5px;
+		padding: 12px 50px 10px 5px;
 		font-weight: bold;
 	}
 	.btn-3:after {
@@ -229,16 +244,16 @@
 		}
 		.third-part-image {
 			padding: 0;
-			max-width: 361px;
-			height: 204px;
+			max-width: 100%;
+			height: 100%;
 			margin: 0 auto 0;
 		}
 		.top-forth-part .d-flex {
 			flex-direction: column-reverse;
 		}
 		.top-forth-part-image {
-			padding-top: 32px;
-			max-width: 375px !important;
+			padding-top: 20px;
+			max-width: 100% !important;
 			margin: 0 auto;
 			width: 100% !important;
 		}
@@ -256,15 +271,17 @@
 
 		}
 		.top-fift-part {
-			max-width: 346px;
+			max-width: 100%;
 			margin: 0 auto;
+			width: 100%;
+			float: left;
 		}
 		.fift-text-part {
 			width: 100%;
 			height: 100%;
 			text-align: left;
 			margin: 67px auto 0;
-			display: inline-block;
+			max-width: 346px;
 		}
 		.fift-text-part p {
 			margin-bottom: 16px;
@@ -277,11 +294,11 @@
 		.top-fift-image {
 			width: 100%;
 			margin-top: 0;
-			max-width: 375px;
+			max-width: 100%;
 			display: inline-block;
 		}
 		.top-fift-image img {
-			max-width: 375px;
+			max-width: 100%;
 			float: left;
 		}
 		.switching-part {
@@ -593,6 +610,13 @@
 }
 
 @media only screen and (min-width: 320px) and (max-width:400px) {
+	.first-text-part h4 {
+		max-width: 300px;}
+	p.color-green {
+		padding: 0;
+		font-size: 18px;}
+	.aword-part-taxt-title {
+		max-width: 300px !important;}
 	.arrow-class button.owl-prev {
 		position: absolute;
 		left: -20px;
@@ -600,8 +624,6 @@
 		height: 40px !important;
 		width: 40px!important;
 	}
-	.first-text-part h1 {
-		font-size: 18px !important;}
 	.arrow-class button.owl-next {
 		position: absolute;
 		right: -20px;
@@ -609,10 +631,10 @@
 		height: 40px !important;
 		width: 40px!important;
 	}
-	.switching-part h3 {
+	/* .switching-part h3 {
 		font-size: 19px;}
 		.first-text-part h1 {
-			font-size: 19px;}
+			font-size: 19px;} */
 	.faq-accordion-heading a span {
     width: 280px;
     float: left;}
@@ -667,7 +689,7 @@
 	}
 	.main-content .owl-theme .custom-nav .owl-prev {left: -40px;}
 		.main-content .owl-theme .custom-nav .owl-next {right: -40px;}
-	.bg-wight .btn-3a.bg-orang-btn {font-size: 14px;max-width: 200px !important;}
+	/* .bg-wight .btn-3a.bg-orang-btn {font-size: 14px;max-width: 200px !important;} */
 	.bg-wight .btn-3:after {width: 40px;}
 	 .protaction-table-section .bg-wight h4 {font-size: 18px;}
 	 .image-part img {max-height: 160px !important;}
@@ -746,7 +768,7 @@
 		height: 55px;
 		font-family: HDI-GerlingSans;
 		font-size: 20px;
-		padding: 10px 50px 10px 5px;
+		padding: 12px 50px 10px 5px;
 		font-weight: bold;
 	}
 	.btn-3:after {
@@ -1019,13 +1041,11 @@
 	.third-part-image {
 		padding-top: 0;
 		position: absolute;
-		top: 1035px;
+		top: 1005px;
 		padding-right: 0;
-		width: 562px !important;
-		height: 408px;
-		max-height: 408px;
+		width: 619px !important;
 		z-index: 1;
-		left: 70px;
+		left: 28px;
 	}
 
 .third-part-text {
@@ -1081,9 +1101,13 @@
 }
 
 .top-fift-image {
-    max-width: 450px;
+    max-width: 520px;
     width: 100%;
     margin: 0 auto;
+    position: absolute;
+    left: 50%;
+    top: 265px;
+    transform: translate(-50%,0%);
 }
 .forth-part-text .sm-center {
     width: 100%;
@@ -1093,6 +1117,7 @@
 }
 
 @media only screen and (min-width: 1600px) {
+	.aword-part-taxt p.contant-p{float: inherit;}
 	.main-width {
 		width: 1500px;
 		height: 2840px;
@@ -1173,6 +1198,14 @@
 
 }
 @media only screen and (min-width: 1025px) and (max-width:1199px) {
+	img.aword-img1 {
+		right: 0;
+		height: 380px;
+		position: absolute;
+		bottom: -50px;
+		display: inline-block;
+		width: 600px;
+	}
 	.third-part-image {
 		padding-top: 0;
 		position: absolute;
