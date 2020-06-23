@@ -1117,6 +1117,8 @@
 }
 
 @media only screen and (min-width: 1600px) {
+	.top-fift-image {
+		max-width: 520px;}
 	.aword-part-taxt p.contant-p{float: inherit;}
 	.main-width {
 		width: 1500px;
