@@ -54,7 +54,7 @@ a.nav-link:hover {
 	} */
 .first-text-part {width: 100%;}
 .first-image-part {width: 100%;}
-.first-text-part h1 {width: 981px;height: 96px;font-family: HDI-GerlingSans-normal;font-size: 42px;
+.first-text-part h1 {width: 981px;height: 96px;font-family: HDI-GerlingSans;font-size: 42px;
   font-weight: bold;
   font-stretch: condensed;
   font-style: normal;
@@ -82,7 +82,7 @@ a.nav-link:hover {
 		font-size: 30px;
   		font-weight: bold;
   		line-height: 1.1;
-  		color: #009c33;    text-transform: uppercase;font-family: HDI-GerlingSans-normal;
+  		color: #009c33;    text-transform: uppercase;font-family: HDI-GerlingSans;
 	}
 .top-second-part p {
 	font-size: 19px;
@@ -106,14 +106,14 @@ a.nav-link:hover {
     font-size: 19px;
     font-weight: bold;
     line-height: 1.1;
-    color: #009c33;font-family: HDI-GerlingSans-normal;
+    color: #009c33;font-family: HDI-GerlingSans;
 }
 .fift-text-part h3 {
     text-transform: uppercase;
     font-size: 30px;
   	font-weight: bold;
   	line-height: 1.1;
-  	color: #009c33;font-family: HDI-GerlingSans-normal;
+  	color: #009c33;font-family: HDI-GerlingSans;
 }
 .fift-text-part .sm-center {
     width: 100%;
@@ -171,7 +171,7 @@ a.nav-link:hover {
 }
 .forth-part-text h4{    font-size: 19px;
     font-weight: bold;
-    line-height: 1.1; font-family: HDI-GerlingSans-normal;
+    line-height: 1.1; font-family: HDI-GerlingSans;
 	color: #009c33;}
 .top-forth-part {
 		padding-top: 160px;
@@ -228,7 +228,7 @@ a.nav-link:hover {
 	font-style: normal;
 	line-height: 1.1;
 	letter-spacing: normal;
-	color: #009c33;font-family: HDI-GerlingSans-normal;
+	color: #009c33;font-family: HDI-GerlingSans;
 }
 
 .switching-part-title {
@@ -292,7 +292,7 @@ li.img-last-part {
     font-style: normal;
     line-height: 1.21;
     letter-spacing: normal;
-    color: #009c33;
+    color: #009c33;font-family: HDI-GerlingSans;
 }
 .footer-text li.bold-taxt {
     font-size: 19px;
@@ -314,7 +314,7 @@ li.img-last-part {
     font-stretch: condensed;
     font-style: normal;
     line-height: normal;
-    letter-spacing: normal;
+    letter-spacing: normal;font-family: HDI-GerlingSans;
 }
 
 .protaction-part-title {
@@ -671,7 +671,7 @@ h3.protaction-title {
     font-weight: bold;
     line-height: 2.1;
 	color: #009c33;
-	margin-top: 90px;font-family: HDI-GerlingSans-normal;
+	margin-top: 90px;font-family: HDI-GerlingSans;
 
 }
 
@@ -1031,7 +1031,7 @@ img.aword-img1 {
   	font-weight: bold;
   	line-height: 1.1;
   	color: #009c33;
-    text-transform: uppercase;
+    text-transform: uppercase;font-family: HDI-GerlingSans;
 }
 
 .aword-part-taxt p {
