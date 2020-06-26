@@ -4,9 +4,10 @@
 } */
 /* @font-face { font-family: HDI-GerlingSans-Bold; src: url('./fonts/hdi-gerlingsans-regular-webfont.woff'); }  */
 
-@font-face {font-family: HDI-GerlingSans;  src: url('../fonts/TTF/HDI-GerlingSansCond-Bold.ttf')}
-@font-face {font-family: HDI-GerlingSans-normal; src: url('../fonts/TTF/HDI-GerlingSansCond-Regular.ttf');}
-@font-face {font-family: HDI-GerlingSans-light; src: url('../fonts/TTF/HDI-GerlingSansCond-Light.ttf');}
+@font-face {font-family: HDI-GerlingSans;  src: url('../fonts/TTF/HDI-GerlingSansCond-Bold.ttf'), url('../fonts/hdi-gerlingsanscond-bold-webfont.woff2')}
+@font-face {font-family: HDI-GerlingSans-normal; src: url('../fonts/TTF/HDI-GerlingSansCond-Regular.ttf'),url('../fonts/hdi-gerlingsanscond-regular-webfont.woff');}
+@font-face {font-family: HDI-GerlingSans-light; src: url('../fonts/TTF/HDI-GerlingSansCond-Light.ttf'),url('../fonts/TTF/hdi-gerlingsanscond-light-webfont.woff2');}
+
 
 body {
 	font-family:  HDI-GerlingSans-light;
