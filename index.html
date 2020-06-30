@@ -36,8 +36,8 @@
 </head>
 
 <body>
-   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MZF8W39"
-      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MZF8W39" height="0" width="0"
+         style="display:none;visibility:hidden"></iframe></noscript>
    <header>
       <div class="navigation-wrap start-header start-style">
          <div class="">
@@ -715,7 +715,7 @@
                   </a>
                </div>
             </div>
-            <div class="acordian-bottom-part-title" >
+            <div class="acordian-bottom-part-title">
                <h3 id="unsereempfehlungen">STETS DIE BESTE LEISTUNG AM MARKT</h3>
                <p>Um Ihre Vierbeiner bestmöglich abzusichern, können Sie auch ganz einfach unsere Bestleistungsgarantie
                   zu Ihrem Premium-Tarif hinzubuchen.</p>
@@ -746,7 +746,8 @@
                               HAFTPFLICHTVERSICHERUNG ABSCHLIEßEN
                            </h3>
                            <p class="title-p">Individuelle Absicherung und hervorragender Service</p>
-                           <p class="contant-p">HDI bietet Ihnen über <span class="bold">100 Jahre Kompetenz</span> und <span class="bold">Erfahrung</span>. Wir versichern
+                           <p class="contant-p">HDI bietet Ihnen über <span class="bold">100 Jahre Kompetenz</span> und
+                              <span class="bold">Erfahrung</span>. Wir versichern
                               Ihr Haustier zuverlässig und helfen im Schadensfall schnell und kompetent. Entdecken Sie
                               unsere Produktlinien und individualisieren Sie Ihren Versicherungsschutz. Wir bieten Ihnen
                               für jede Lebenssituation die passenden Bausteine. Wechseln Sie jetzt!</p>
@@ -862,6 +863,11 @@
 
          jQuery('.navigation a').removeClass('active')
          target.addClass('active');
+
+         if ($(window).width() < 767) {
+            jQuery('.navbar-collapse').removeClass('show')
+            jQuery(".navbar-toggler").addClass('collapsed')
+         }
 
          jQuery("body, html").animate({
             scrollTop: jQuery(element).offset().top - 90
