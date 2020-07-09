@@ -1411,6 +1411,7 @@ li.bold-taxt {
     position: absolute;
     top: 0;
     left: 60px;
+    padding-top: 40px;
 }
 ul.footer-last-taxt {
     padding: 82px 50px 63px 0 !important;
