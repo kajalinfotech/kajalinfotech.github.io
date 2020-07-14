@@ -1404,8 +1404,8 @@ li.bold-taxt {
     font-weight: bold;
 }
 .footer-image img {
-    width: 141px;
-    height: 141px;
+    width: 100px;
+    height: 100px;
 }
 .footer-image {
     position: absolute;
