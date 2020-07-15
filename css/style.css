@@ -1185,6 +1185,7 @@ img.aword-img1 {
     text-align: center;
     display: flex;
     justify-content: center;
+    margin-top: 43px;
 }
 .open-more-option a{position: relative;}
 
@@ -1491,5 +1492,61 @@ ul.footer-icon img{margin-top:10px ;}
 
 /*  */
 
-
+.border-bot-pdf {
+    width: 100%;
+    max-width: 750px;
+    margin: 0 auto;
+}
+.pdf-accordion-heading {
+    width: 100%;
+    float: left;
+    padding: 10px 0;
+    border-bottom: 2px solid #000;
+}
+.pdf-accordion-heading a {
+    font-size: 16px;
+    color: #0a0a0a;
+    font-weight: bold;
+}
+.trn-colleps {
+    transition: none 0s ease 0s !important;
+}
+.border-bot-pdf .accordion-inner {
+    width: 100%;
+    float: left;
+    margin-top: 30px;
+    font-size: 16px;
+    line-height: 22px;
+}
+.pdf-accordion-heading .accordion-toggle {
+    position: relative;
+    width: 100%;
+    float: left;
+}
+.pdf-accordion-heading .accordion-toggle:after {
+    content: "";
+    display: inline-block;
+    background-image: url(../images/arrow_up_green.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    font-size: 30px;
+    top: 30%;
+    right: 10px;
+    position: absolute;
+    width: 15px;
+    height: 9px;
+}
+.pdf-accordion-heading .accordion-toggle.collapsed:after {
+    content: "";
+    display: inline-block;
+    background-image: url(../images/arrow_down_green.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    font-size: 30px;
+    top: 30%;
+    right: 10px;
+    position: absolute;
+    width: 15px;
+    height: 9px;
+}
 /*  */
