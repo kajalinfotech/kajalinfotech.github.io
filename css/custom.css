@@ -547,7 +547,7 @@
 			.top-navbar a.navbar-brand {padding: 20px 15px;}
 			.top-navbar .navbar-toggler {padding: 20px 15px;}
 			.top-navbar .fixed-top {
-				padding: 0;
+				padding: 0 0 0 15px;
 			}
 			/* .arrow-class button.owl-prev {
 				background: rgba(0, 156, 51, 0.45) !important;
