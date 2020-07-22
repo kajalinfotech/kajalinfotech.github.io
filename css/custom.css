@@ -12,6 +12,7 @@
 /* Small devices (portrait tablets and large phones, 767px and up) */
 
 @media only screen and (max-width: 767px) {
+	
 	.navbar-nav li.nav-item.pl-4 {
 		padding-left: 0 !important;
 	}
@@ -34,8 +35,9 @@
 	.nav-up {
 		top: -85px;
 	}
-	.top-navbar .fixed-top.shrink {
-		padding: 0;}
+	.top-navbar .fixed-top.shrink, .top-navbar .fixed-top {
+		padding: 0 0 0 15px;
+	}
 	.top-navbar a.navbar-brand {
 		padding: 20px 15px;
 	}
