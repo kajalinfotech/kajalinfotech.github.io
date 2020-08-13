@@ -1633,3 +1633,8 @@ img.aword-img1 {
     letter-spacing: normal;
     color: rgba(10, 10, 10, 0.5);
   }
+
+  .custom-checkbox-part a {
+    color: #000;
+    text-decoration: underline;
+}
