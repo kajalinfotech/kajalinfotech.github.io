@@ -1565,7 +1565,7 @@ img.aword-img1 {
     max-height: 152px;
     margin: 0 auto;
 }
-.w-326-btn{max-width: 326px !important;}
+.w-326-btn{max-width: 326px !important; padding: 10px 62px 10px 10px !important;}
 .mail-box-part .text-center {
     margin: 55px 0 67px;
 }
@@ -1607,7 +1607,7 @@ img.aword-img1 {
     padding-right: 20px;
 }
 .slider-main-content li {
-    font-size: 16px;
+    font-size: 19px;
     padding-bottom: 52px;
     text-align: left;
     position: relative;
@@ -1626,7 +1626,9 @@ img.aword-img1 {
     width: 23px;
     top: 5px;
 }
-
+.whitepaper-slider .owl-dots {
+    margin-top: 30px;
+}
 
 
 .mail-box-part input::placeholder {
