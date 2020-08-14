@@ -1237,7 +1237,11 @@ ul.hegiht-protection {
 	box-shadow: 2px 2px 5px #229c33;
 	font-weight: bold;
 	font-family: HDI-GerlingSans;
-  	font-size: 20px;
+      font-size: 20px;
+      display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
 }
 .border-btn:hover {
     background: #009c33;
@@ -1565,7 +1569,10 @@ img.aword-img1 {
     max-height: 152px;
     margin: 0 auto;
 }
-.w-326-btn{max-width: 326px !important; padding: 10px 62px 10px 10px !important;}
+.w-326-btn{max-width: 326px !important; 
+    padding: 10px 62px 10px 10px !important;
+    
+}
 .mail-box-part .text-center {
     margin: 55px 0 67px;
 }
