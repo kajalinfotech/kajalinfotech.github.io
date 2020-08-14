@@ -1601,7 +1601,7 @@ img.aword-img1 {
 }
 .slider-main-content ul {
     list-style-type: none;
-    padding-left: 45px;
+    padding-left: 35px;
     margin: 0;
     padding-right: 20px;
 }
@@ -1617,7 +1617,7 @@ img.aword-img1 {
     display: inline-block;
     color: #009c33;
     position: absolute;
-    left: -45px;
+    left: -35px;
     height: 19px;
     background-image: url(../images/Checkmark_green.svg);
     background-repeat: no-repeat;
