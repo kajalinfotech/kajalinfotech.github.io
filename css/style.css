@@ -1580,14 +1580,14 @@ img.aword-img1 {
 
   .mail-box-part {
     width: 100%;
-    max-width: 591px;
+    max-width: 500px;
     margin: 0 auto;
 }
 .mail-input-box {
     width: 100%;
     float: left;
-    display: flex;
-    justify-content: center;
+    /* display: flex;
+    justify-content: center; */
 }
 .custom-checkbox-part {
     width: 100%;
