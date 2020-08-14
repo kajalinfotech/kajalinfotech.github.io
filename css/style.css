@@ -1440,6 +1440,7 @@ img.aword-img1 {
     margin-top: 169px;
     margin-bottom: 15px;
     font-family: HDI-GerlingSans;
+    text-transform: uppercase;
 }
 .whitepaper-slider-top p {
     font-size: 19px;
@@ -1451,6 +1452,7 @@ img.aword-img1 {
     color: #000000;
     float: left;
     margin-bottom: 54px;
+    padding: 0 30px;
 }
 .whitepaper-slider {
     width: 100%;
@@ -1576,6 +1578,8 @@ img.aword-img1 {
 .mail-input-box {
     width: 100%;
     float: left;
+    display: flex;
+    justify-content: center;
 }
 .custom-checkbox-part {
     width: 100%;
@@ -1638,3 +1642,12 @@ img.aword-img1 {
     color: #000;
     text-decoration: underline;
 }
+
+.whitepaper-slider .owl-nav {
+    font-size: 2.3rem;
+    margin-top: 0px;
+}
+
+
+
+ 
