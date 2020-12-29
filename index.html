@@ -37,5 +37,11 @@
           // , force: 'ios' // Uncomment for platform emulation
       });
     </script>  -->
+    <script>
+       window.addEventListener('beforeinstallprompt', (e) => {
+  // Prevent Chrome 67 and earlier from automatically showing the prompt
+console.log('fired');
+});
+    </script>
   </body>
 </html>
